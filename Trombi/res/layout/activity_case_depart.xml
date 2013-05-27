@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,33 +6,46 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".CaseDepart" >
+    tools:context=".CaseDepart" 
+android:background="@drawable/demarage">
 
-    <TextView
-        android:id="@+id/textView1"
+    <Button
+        android:id="@+id/ViewContact"
+        android:layout_width="100dp"
+            android:layout_marginTop="40sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view"
+        android:height="80sp"
+        android:width="80dp" 
+         android:gravity="center_vertical|left"
+            android:orientation="horizontal"/>
+
+   
+
+    <Button
+        android:id="@+id/AddContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/trombi"
-        android:textSize="30dp" />
+        android:layout_marginTop="160sp"
+        android:background="@drawable/add"
+        android:gravity="center_vertical|left"
+        android:height="80sp"
+        android:width="80dp" />
+     
+     <Button
+                android:id="@+id/ExitTrombi"
+             
+                android:background="@drawable/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="280sp"
+                android:width="80dp"
+                android:height="80sp"
+                 android:gravity="center_vertical|left"
+           ></Button>
+     
+     
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginRight="14dp"
-        android:layout_marginTop="18dp"
-        android:text="@string/ajout"
-        android:textSize="10dp" />
+    
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/button1"
-        android:text="@string/gener"
-        android:textSize="10dp" />
-
-</RelativeLayout>
+</LinearLayout>
