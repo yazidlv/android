@@ -7,23 +7,25 @@ import android.util.Log;
 
 public class DatabaseHelper extends SQLiteOpenHelper {  
   
-public SQLiteDatabase formationDB;
+public SQLiteDatabase trombi;
 
-private static final String DATABASE_NAME = "Formation";  
-private static final String DATABASE_TABLE = "filieres";  
+private static final String DATABASE_TABLE = "Profils.db";  
 private static final int DATABASE_VERSION = 1;  
 
 
-private static final String DATABASE_CREATE = "create table "  
+private static final String DATABASE_NAME="create table "  
         + DATABASE_TABLE + " (_id integer primary key autoincrement, "  
-        + "nom text not null, prenom text not null, photo int);";  
+        + "nom text not null, prenom text not null, image text not null);";  
+
+
+
     public DatabaseHelper(Context context) {  
         super(context, DATABASE_NAME, null, DATABASE_VERSION);  
     }  
   
     @Override  
     public void onCreate(SQLiteDatabase db) {  
-        db.execSQL(DATABASE_CREATE);  
+        db.execSQL(DATABASE_NAME);  
     }  
   
     @Override  
@@ -31,7 +33,7 @@ private static final String DATABASE_CREATE = "create table "
         Log.w("Content provider database",  
                 "Upgrading database from version " + oldVersion + " to "  
                         + newVersion + ", which will destroy all old data");  
-        db.execSQL("DROP TABLE IF EXISTS titles");  
+        db.execSQL("DROP TABLE IF EXISTS DATABASE_NAME");  
         onCreate(db);  
   
     }  

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Trombi</string>
+    <string name="app_name">TROMBINOSCOPE</string>
     <string name="action_settings">Settings</string>
-    <string name="trombi">trombinoscope</string><string name="hello_world">Hello world!</string>
+    <string name="trombi">trombinos</string>
+    <string name="hello_world">Hello world!</string>
     
-    <string name="ADD">ajouter contact</string>
-    <string name="VIEW">voir les contacts</string>
-    <string name="EXIT">quitter l'application</string>
+    <string name="ADD">ajouter</string>
+    <string name="VIEW">visualiser</string>
     <string name="name">nom :</string>
     <string name="prenom">prenom :</string>
     <string name="take">prendre une photo</string>
+    <string name="ajout">ajouter</string>
+    <string name="Exit">quitter</string>
 
 </resources>
