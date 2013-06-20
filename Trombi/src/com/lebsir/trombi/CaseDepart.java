@@ -29,7 +29,7 @@ public class CaseDepart extends Activity {
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.activity_case_depart);
-	        GridView gridView = (GridView) findViewById(R.id.ContactList);
+	        GridView gridView = (GridView) findViewById(R.id.ListProfils);
 	    
 	        gridView.setOnItemClickListener(new OnItemClickListener() {
 	            @Override
