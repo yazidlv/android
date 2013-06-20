@@ -27,7 +27,7 @@ public abstract class GererBDD {
 		    BDD.close();
 		  }
 		     
-		  public SQLiteDatabase getDb() {
+		  public SQLiteDatabase getBDD() {
 		    return BDD;
 		  }
 		}
