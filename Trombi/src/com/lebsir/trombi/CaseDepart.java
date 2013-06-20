@@ -33,19 +33,7 @@ public class CaseDepart extends Activity {
 	    
 	        gridView.setOnItemClickListener(new OnItemClickListener() {
 	            @Override
-	            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-	                Intent i = null;
-	                if(position==0){
-	                    i= new Intent(getApplicationContext(),add.class);
-	                }
-	                else if(position==1){
-	                    i= new Intent(getApplicationContext(),view_list.class);
-	                }
-	                else if(position==2){
-	                	i= new Intent(getApplicationContext(),profil.class);
-	                }
-	                startActivity(i);
-	            }
+	           
 	        });
 	    }
 
